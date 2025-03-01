@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        #course{
+            width: 300px;
+            height:100px;
+            border:px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5px;
+            margin-top: 20px auto;
+            margin: 10px auto;
+        }
+        #bba, #bca, #bsc, #btech{
+            width: 300px;
+            height: 90px;
+            background-color: white;
+            box-shadow: 0px 0px 10px black;
+            margin: 10px;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            margin: 10px auto;
+            justify-content: center;
+            flex-direction: column; 
+        }
+        #bba p, #bca p, #bsc p, #btech p{
+            font-size: 25px;
+            color: purple;
+            font-family: "Ubuntu", sans-serif;
+            margin-top: 7px;
+            text-align: center;
+        }
+        #uni_name{
+            width: 100%;
+            height: 30px;
+            background-color: blue;
+            color: white;
+            margin: 10px auto;
+            text-align: center;
+            padding: 5px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        #ch_course p{
+            width: 300px;
+            height:30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5px;
+            margin-top: 20px auto;
+            margin: 10px auto;
+            color: white;
+            
+        }
+        #search{
+            width: 300px;
+            height:30px;
+            border:px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5px;
+            margin-top: 20px auto;
+            margin: 10px auto;
+            font-size: 18px;
+            
+        }
+        
+        a{
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <nav id="uni_name">
+        Chaudhary Charan Singh University
+    </nav>
+    
+    <input type="search" placeholder="Search Course Here..." id="search"> 
+    <div id="course">
+        <a href="">
+            <div id="bba">
+                <p>Bachelor of Business Adminstration (BBA)</p>
+            </div>
+        </a>
+    </div>
+    <div id="course">
+        <a href="">
+            <div id="bca">
+                <p>Bachelor of Computer Application (BCA)</p>
+            </div>
+        </a>
+    </div>
+    <div id="course">
+        <a href="">
+            <div id="bca">
+                <p>Bachelor of Science (B.sc)</p>
+            </div>
+        </a>
+    </div>
+    <div id="course">
+        <a href="">
+            <div id="bca">
+                <p>Bachelor of Commerce (B.com)</p>
+            </div>
+        </a>
+    </div>
+</body>
+</html>

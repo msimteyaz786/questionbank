@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #shareBtn{
+            width: 100px;
+            height: 30px;
+            color: red;
+
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="shareBtn">Share</button>
+</body>
+<script>
+    const shareBtn = document.querySelector("#shareBtn");
+    shareBtn.addEventListener("click",(event)=>{
+        if(navigator.share){
+            navigator.share({
+                title:"Google Official Website",
+                url:"https://www.google.com",
+            }).then(()=>{
+                console.log("Thanks for shareing");
+            }).catch((err)=>{
+                console.log("Erroe using web share API");
+                console.log(err);
+            })
+            }
+            else{
+                alert("Brower doesn't support this werb share API");
+        }
+    })
+    
+</script>
+</html>

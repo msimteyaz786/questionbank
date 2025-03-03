@@ -16,6 +16,21 @@
     /* letter-spacing: 1px; */
     font-weight: bold;
 }
+#first_content h1{
+    color: blue;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    text-align: center;
+}
+#second_content p{
+    color: red;
+    width: 100%;
+    height: auto;
+    border: px solid green;
+    text-align: left;
+}
 #container{
     width: 90%;
     height: auto;
